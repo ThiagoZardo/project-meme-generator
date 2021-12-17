@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/cfd4e8c865.js" crossorigin="anonymous"></script> 
 </head>
@@ -12,11 +15,16 @@
 
     <section class="main">
 
-        <br><br><br><br>
-        <input id="text-input" type="text" maxlength="60">
-        <br>
+        <h1 id="title">Gerador de Memes</h1>
+
+        <div class="box-digite-texto">
+            <p class="legenda">Digite aqui uma frase para seu meme</p>
+            <input id="text-input" type="text" maxlength="60">
+        </div>
         
-        <input type="file" id="meme-insert" accept="images/*" onchange="exibeImagem(event)">
+        <div class="input">      
+            <input type="file" id="meme-insert" accept="images/*" onchange="exibeImagem(event)">
+        </div>
 
         <div id="meme-image-container">
                        
@@ -25,14 +33,15 @@
 
         </div><!--meme-image-container-->
 
+        <button id="fire" type="button"> Fire</button>
+        <button id="water" type="button"> water</button>
+        <button id="earth" type="button"> earth</button>
         
-        <div id="meme-insert">
-        </div>
 
     </section>
 
    
-
+    
     
     <script src="script.js"></script>
 </body>

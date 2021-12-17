@@ -2,10 +2,32 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Coming Soon', cursive;
+}
+
+#title{
+    margin-top: 30px;
+    font-size: 50px;
+    color: blue;
+}
+
+.box-digite-texto{
+    margin: 30px 0 15px 0;
+}
+
+.box-digite-texto p{
+    font-weight: bold;
+}
+
+
+#text-input{
+    width: 500px;
+    height: 30px;
+    border-radius: 20px;
 }
 
 #meme-image-container{
-    margin: 150px auto;
+    margin: 50px auto;
     width: 500px;
     height: 300px;
     border: 1px solid black;
@@ -26,4 +48,16 @@
 
 #img-do-meme{
     z-index: 998;
+}
+
+#fire{
+    background-color: rgb(255,0,0)
+}
+
+#water{
+    background-color: rgb(0,0,255);
+}
+
+#earth{
+    background-color: rgb(0,128,0);
 }
