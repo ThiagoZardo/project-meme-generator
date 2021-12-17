@@ -10,10 +10,10 @@ function exibeTexto(){
 
 
 //Upload de Imagem
-let exibeImagem = function(event) {
+function exibeImagem(event) {
     let imagem = document.getElementById('meme-image');
-    imagem.src = URL.createObjectURL(event.target.files[0]);
+    imagem.src = (URL.createObjectURL(event.target.files[0]));
     imagem.onload = function() {
-        URL.revokeObjectURL(imagem.src) // free memory
+        URL.revokeObjectURL(imagem.src) 
     }
 };
